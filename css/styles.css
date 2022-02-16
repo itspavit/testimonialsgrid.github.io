@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;700&display=swap");
+
+:root {
+  /* Primary Colors */
+  --Moderateviolet: hsl(263, 55%, 52%);
+  --darkgrayishblue: hsl(217, 19%, 35%);
+  --darkblackishblue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --lightviolet: hsl(265, 79%, 70%);
+  --backgroundcolor: hsl(213, 44%, 95%);
+
+  /* Neutral Colors */
+  --Lightgray: hsl(0, 0%, 81%);
+  --Lightgrayishblue: hsl(210, 46%, 95%);
+
+  /* Font weights */
+  --weight500: 500;
+  --weight600: 600;
+}
+
+/* setting some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* some basic styling */
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--backgroundcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+h2 {
+  font-weight: var(--weight600);
+  font-size: 0.9rem;
+}
+
+h3 {
+  font-weight: var(--weight500);
+  color: var(--Lightgrayishblue);
+  opacity: 50%;
+  font-size: 0.7rem;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-size: 1rem;
+  color: var(--Lightgray);
+  opacity: 70%;
+}
+
+article {
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.graduates {
+  line-height: 1.2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* colors for all articles */
+.grid-item1 {
+  background-color: var(--Moderateviolet);
+}
+
+.grid-item2 {
+  background-color: var(--darkgrayishblue);
+}
+
+.grid-item3,
+.grid-item5 {
+  background-color: var(--White);
+}
+
+.grid-item4 {
+  background-color: var(--darkblackishblue);
+}
+
+/* adding text colors for articles */
+.text-white h2,
+.text-white p,
+.text-white h3,
+.text-white blockquote {
+  color: var(--White);
+}
+
+.text-black h2,
+.text-black p,
+.text-black h3,
+.text-black blockquote {
+  color: var(--black);
+}
+
+/* image styling */
+img {
+  border-radius: 100%;
+  width: 2.5rem;
+}
+
+.grid-item1 img {
+  border: 3px solid var(--lightviolet);
+}
+
+.grid-item2 img {
+  border: 3px solid var(--Lightgray);
+}
+
+.grid-item3 img,
+.grid-item5 img {
+  border: 3px solid var(--darkblackishblue);
+}
+
+.grid-item4 img {
+  border: 3px solid var(--Moderateviolet);
+}
+
+/* Using flexbox to align graduate name next to image */
+.flex-item {
+  display: flex;
+}
+
+/* styling for tablet this design was not a requirement just made this for fun*/
+
+@media (min-width: 568px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  article:last-child {
+    grid-column: span 2;
+  }
+}
+
+/* Desktop styling */
+
+@media (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-col-span {
+    grid-column: span 2;
+  }
+
+  article:last-child {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+  }
+  main {
+    max-width: 80vw;
+  }
+}
