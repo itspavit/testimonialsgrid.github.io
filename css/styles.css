@@ -43,6 +43,7 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
 
 h2 {
@@ -83,6 +84,9 @@ article {
 /* colors for all articles */
 .grid-item1 {
   background-color: var(--Moderateviolet);
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 17%;
 }
 
 .grid-item2 {
