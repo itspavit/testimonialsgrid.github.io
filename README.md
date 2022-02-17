@@ -29,13 +29,14 @@ Users should be able to:
 ### Screenshot
 
 Mobile Layout
-![mobile-grid](https://user-images.githubusercontent.com/92730827/154295796-91328dba-0106-49c1-af02-88afb60616e5.png)
+![mobile-grid](https://user-images.githubusercontent.com/92730827/154410988-9dddd373-0212-4c90-8113-967e8834b0cc.png)
 
 Tablet Layout
-![tablet-grid](https://user-images.githubusercontent.com/92730827/154295874-7fc0eab4-47d1-4784-a3ce-71a20bfb337f.png)
+![tablet-grid](https://user-images.githubusercontent.com/92730827/154411119-804b96e5-4ef1-4257-9918-65db40309a6f.png)
 
 Desktop Layout
-![desktop-grid](https://user-images.githubusercontent.com/92730827/154295905-c951b015-da47-4205-80e4-52938b65cbfc.png)
+![desktop-grid](https://user-images.githubusercontent.com/92730827/154410939-124e0bf3-e443-408a-860d-61baf48a86c7.png)
+
 
 ### Links
 
